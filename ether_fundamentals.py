@@ -154,7 +154,7 @@ Generate a daily brief for Chandler covering:
 Keep it under 220 words. Be direct. No fluff. Speak like a sharp trading desk analyst."""
 
     response = anthropic_client.messages.create(
-        model="claude-sonnet-4-20250514",
+        model="claude-sonnet-4-5",
         max_tokens=500,
         messages=[{"role": "user", "content": prompt}]
     )
